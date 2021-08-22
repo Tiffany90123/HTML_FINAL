@@ -282,7 +282,7 @@ body a{
 	width: 224px;
 	height: 50px;
 	display: block;
-	background: url(/fianl_images/footerLogo.png) no-repeat;
+	background: url(fianl_images/footerLogo.png) no-repeat;
 	text-indent: 101%;
 	overflow: hidden;
 	white-space: nowrap;
