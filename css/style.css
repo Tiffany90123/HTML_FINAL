@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    font-family: Microsoft JhengHei ;
+}
+
+body a{
+    text-decoration: none;
+}
+
+/* header樣式 */
+.header{
+    position:fixed;
+    top:0;
+    background:white;
+    width:100%;
+    z-index: 900;  /* 為了讓banner的opacity不要蓋上來 */
+}
+.fanPage{
+    padding:5px;
+    display:flex;
+    justify-content: flex-end;
+    background-color:#f4f4f4;
+ 
+}
+
+.fanPage a{
+    margin-right:15px;
+}
+
+.fanPage a:hover{
+   background-color:#C0C0C0;
+   opacity: 0.5;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h1 a {
+	width: 224px;
+	height: 50px;
+	display: block;
+	background: url(/fianl_images/logo.png);
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+  }
+
+.nav ul{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.nav a{
+    display:block;
+    margin-right:30px;
+    color:#69c4b1;
+    font-weight: 900;
+    position:relative;
+}
+
+.nav a::after{
+    content:" ";
+    position:absolute;
+    bottom:-10px;
+    left:0;
+    border-bottom:5px solid transparent;
+    width:0%;
+    transition:0.6s ease-in-out;
+}
+
+.nav a:hover::after{
+    border-bottom:5px solid #1aaa8d;
+    width:100%;
+}
+
+/* header樣式結尾 */
+
+/* content樣式 */
+
+
+.content{
+    margin-top:90px;
+}
+
+
+.banner{
+    width:100%;
+    height:400px;
+    background:url(/fianl_images/banner.png) no-repeat;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.banner h1{
+    padding:50px;
+    font-size:60px;
+    color:white;
+    font-weight:900;
+    background-color:black;
+    opacity: 0.7;
+    line-height: 90px;
+}
+
+.courses{
+    width:90%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin:50px auto 50px auto;
+    padding:10px;
+}
+
+.courseItem{
+    line-height: 1.5;
+    font-weight:bold;
+    font-size:15px;
+    margin-bottom:5px;
+    width:25%;
+    padding:10px;
+    border-left : #cccccc 1px solid;
+    border-bottom : #cccccc 1px solid;
+    border-radius: 5px;
+    margin-right:10px;
+    box-shadow:3px 3px 3px 3px #cccccc ;
+    
+}
+.courseItem h2{
+    text-align:center;
+    font-size:20px;
+    font-weight:900;
+    margin-bottom:5px;
+}
+
+.courseItem ul {
+  margin-left:5%;
+}
+.courseItem ul li {
+    list-style-type:disc;
+  }
+.courseItem img{
+    display:block;
+    margin:0 auto 10px auto;
+}
+
+.courseTable h1{
+    text-align:center;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+
+
+
+.courseTable table{
+    width:80%;
+    margin: 0 auto 50px auto;
+    font-weight:900;
+    text-align:left;
+}
+
+.courseTable th,td{
+    padding:10px;
+    border-top:1px solid #eeeeed ;
+    border-bottom:1px solid #eeeeed ;
+}
+.courseTable th{
+    background:#f6f5f8;
+}
+
+.courseTable span{
+    color:#69c4b1;
+}
+
+.userInfo{
+    padding:20px 10px 20px 10px;
+    background: -webkit-linear-gradient(#00644b,#007b63);
+    position:relative;
+}
+
+.userInfo h1{
+    font-size:30px;
+    color:white;
+    margin-bottom:20px;
+    line-height:40px;
+    text-align:center;
+}
+
+.userInfo form{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.userInfo .inputArea{
+    display:flex;
+    flex-direction:column;
+    font-size:20px;
+    font-weight:800;
+    color:white;
+    line-height:25px;
+}
+.userInfo .inputArea input{
+   margin:0 0 20px 0;
+   border-radius:5px;
+   
+}
+
+.userInfo .inputArea .submitBtn{
+   width:70px; 
+   height:40px;
+   font-weight:500;
+   color:white;
+   padding:5px 5px 5px 5px;
+   border-radius:5px ;
+   background-color:#1aaa8d;
+   margin-left:75%;
+}
+
+/* content樣式結尾 */
+/* footer樣式 */
+.footer{
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer h1 a {
+	width: 224px;
+	height: 50px;
+	display: block;
+	background: url(/fianl_images/footerLogo.png) no-repeat;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+  }
+.footer ul li{
+    font-size:12px;
+    line-height:20px;
+}
+
+.footer span{
+    color:brown;
+}
+/* footer樣式結尾 */
