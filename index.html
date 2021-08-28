@@ -9,11 +9,12 @@
             <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
+
     <!-- 這是header -->
     <div class="header">
        <ul class="fanPage">
-         <li><a href="https://www.facebook.com/hexschool/" target="_blank" style="color:#4d6395"><img src="fianl_images/facebookIcon.png" alt="六角fb粉絲團">粉絲團</a></li>
-         <li ><a href="https://twitter.com/hexschool1/" target="_blank" style="color:#00acee"><img src="fianl_images/twitterIcon.png" alt="六角推特">聯絡我們</a></li>
+         <li><a href="https://www.facebook.com/hexschool/" target="_blank" id="fb"><img src="fianl_images/facebookIcon.png" alt="六角fb粉絲團">粉絲團</a></li>
+         <li ><a href="https://twitter.com/hexschool1/" target="_blank"  id="tw"><img src="fianl_images/twitterIcon.png" alt="六角推特">聯絡我們</a></li>
        </ul>
        <div class="nav">
            <h1><a href="#">六角學院</a></h1>
@@ -29,26 +30,26 @@
     <!-- 這是content -->
     <div class="content">
         <div class="banner">
-           <h1>六角學院<br>讓您奠定良好的前端基礎</h1>
+           <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
         </div>
-        <div class="courses">
-            <div class="courseItem">
+        <ul class="courses">
+            <li class="courseItem">
                 <img src="fianl_images/html.png" alt="html的logo">
                 <h2>HTML基礎教學</h2>
                 <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，
                     而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發
                     經驗，讓學員學習業界主流的開發方法
                 </p>
-            </div>
-            <div class="courseItem">
+            </li>
+            <li class="courseItem">
                     <img src="fianl_images/rwd.png" alt="jQuery的logo">
                     <h2>響應式網站設計</h2>
                     <p>響應式網站設計(Resposive web design)，目前大多使用者均是以
                         手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界
                         響應式開發方法，讓學生了解行動版開發技巧。
                     </p>
-            </div>
-            <div class="courseItem">
+            </li>
+            <li class="courseItem">
                 <img src="fianl_images/jQuery.png" alt="jQuery的logo">
                 <h2>jQuery基礎教學</h2>
                 <p>本課程有以下特色</p>
@@ -58,11 +59,11 @@
                     <li>學習基本數學運算方法</li>
                     <li>套件的操作與應用</li>
                 </ul>
-            </div>
+            </li>
            
         </div>
         <div class="courseTable">
-            <h1>線上及實體課程的差異</h1>
+            <h2>線上及實體課程的差異</h2>
             <table>
               <tr>
                   <th>項目</th>
@@ -110,16 +111,16 @@
             </table>
         </div>
         <div class="userInfo">
-            <h1>對我們的課程有興趣嗎?<br>歡迎留下資料 </h1>
+            <h2>對我們的課程有興趣嗎?<br>歡迎留下資料 </h2>
             <form action="#" method="post" name="userInfo">
-                <textarea id="texArea" name="userQA" rows="4" cols="90" >
+                <textarea id="textArea" name="userQA" rows="4"  >
                 </textarea>
                 <div class="inputArea">
-                    <label for="userName"><h2>姓名:</h2>
+                    <label for="userName"><h3>姓名:</h3></label>
                     <input id="userName" type="text" name="userName" size="70" placeholder="請輸入姓名" >
-                    <label for="userTel"><h2>電話:</h2></label>
+                    <label for="userTel"><h3>電話:</h3></label>
                     <input id="userTel" type="tel" name="userTel" size="70"  placeholder="請輸入電話">
-                    <label for="userMail"><h2>信箱:</h2></label>
+                    <label for="userMail"><h3>信箱:</h3></label>
                     <input id="userMail" type="email" name="userMail" size="70"  placeholder="請輸入信箱">
                     <input type="submit" class="submitBtn" value="送出">
                 </div>
@@ -130,11 +131,12 @@
     </div>
     <!-- 這是content結尾 -->
     <div class="footer">
-       <h1><a href="#">六角學院</a></h1>
+       <h2><a href="#">六角學院</a></h2>
         <ul>
-            <li>聯絡我們:<span>heaxschool@gmail.com</span></li>
-            <li>電話:<span>0999123456</span></li>
+            <li>聯絡我們:<a href="mail:heaxschool@gmail.com">heaxschool@gmail.com</a></li>
+            <li>電話:<a href="tel:0999123456">0999123456</a></li>
         </ul>
     </div>
+
 </body>
 </html>
